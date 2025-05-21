@@ -1,3 +1,75 @@
+
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  header h1 {
+    color: #be1e2d;
+    font-size: 36px;
+    text-shadow: 1px 1px 2px #888;
+  }
+  
+  /* Section and food items */
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .food-item {
+    background-color: #fff;
+    border: 2px solid #f0c36d;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-item:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Food images */
+  .food-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* YouTube videos */
+  .food-item iframe {
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Paragraphs */
+  .food-item p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+=======
 * {
   margin: 0;
   padding: 0;
@@ -67,70 +139,4 @@ section {
   border-bottom: 3px solid #8b0000;
   display: inline-block;
   padding-bottom: 5px;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.content img {
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.text {
-  max-width: 600px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #8b0000;
-  color: white;
-  margin-top: 40px;
-}
-footer {
-  background-color: #872341;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-footer a {
-  color: #ffdd99;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.moving-emoji {
-  display: inline-block;
-  animation: moveEmoji 5s linear infinite;
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-@keyframes moveEmoji {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-}
+}>>>>>>> main
